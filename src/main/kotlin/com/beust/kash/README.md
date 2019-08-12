@@ -19,7 +19,7 @@ Next, edit `~/.kash.json`, point the `classPaths` key to the jar file that was c
 }
 ```
 
-This extension contains a built-in called `"hello"` which is now available to Kash:
+This extension contains a [built-in called `"hello"`](https://github.com/cbeust/kash-example/blob/master/src/main/kotlin/com/beust/kash/SimpleBuiltin.kt#L9) which is now available to Kash:
 
 ```
 $ kash

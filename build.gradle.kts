@@ -31,8 +31,8 @@ plugins {
 
 dependencies {
     listOf(
-            files("../kash/build/libs/kash-1.15.jar")
-//            "com.beust.kash:kash:1.14"
+//            files("../kash/build/libs/kash-1.15.jar")
+            "com.beust.kash:kash:1.14"
     )
         .forEach { compile(it) }
 

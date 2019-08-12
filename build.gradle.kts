@@ -14,10 +14,6 @@ buildscript {
     }
 }
 
-//java {
-//    sourceCompatibility = JavaVersion.toVersion("11")
-//}
-
 repositories {
     jcenter()
     mavenCentral()
@@ -30,13 +26,9 @@ plugins {
 }
 
 dependencies {
-    listOf(
-//            files("../kash/build/libs/kash-1.15.jar")
-            "com.beust.kash:kash:1.14"
-    )
-        .forEach { compile(it) }
-
-    listOf("stdlib")
-        .forEach { compile(kotlin(it, kotlinVer)) }
-
+    listOf("com.beust.kash:kash:1.15",
+            kotlin("stdlib", kotlinVer))
+        .forEach {
+            compile(it)
+        }
 }

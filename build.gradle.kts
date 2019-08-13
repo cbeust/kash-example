@@ -26,7 +26,7 @@ plugins {
 }
 
 dependencies {
-    listOf("com.beust.kash:kash:1.15",
+    listOf("com.beust.kash:kash:1.16",
             kotlin("stdlib", kotlinVer))
         .forEach {
             compile(it)
